@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-200" style="box-sizing:border-box;">
+
+    <!-- Top header section -->
+    <div class="w-full h-20 bg-white flex flex-row border-b-2 sticky top-0 p-5 z-10">
+        <img src="../images/dashboard.png" class="w-10 h-9 mr-1">
+        <p class="text-2xl font-semibold">Dashboard</p>
+    </div>
+
+    <!-- Four boxes -->
+    <div class="md:flex">
+
+        <div class="hover:shadow-md hover:translate-y-1 m-3 transition-all bg-blue-200 md:w-1/4 rounded-md">
+            <div class="h-36 p-3 m-4 flex gap-y-3 flex-col">
+                <img src="../images/trolley.png" class="w-10 h-10">
+                <div class="text-xl font-bold">5995</div>
+                <div class="text-slate-400">Items Sales</div>
+            </div>
+        </div>
+        <div class="hover:shadow-md hover:translate-y-1 m-3 transition-all bg-emerald-200 md:w-1/4 rounded-md">
+            <div class="h-36 p-3 m-4 flex gap-y-3 flex-col">
+                <img src="../images/delivery.png" class="w-10 h-10">
+                <div class="text-xl font-bold">7343</div>
+                <div class="text-slate-400">New Orders</div>
+            </div>
+        </div>
+        <div class="hover:shadow-md hover:translate-y-1 m-3 transition-all bg-orange-200 md:w-1/4 rounded-md">
+            <div class="h-36 p-3 m-4 flex gap-y-3 flex-col">
+                <img src="../images/products.png" class="w-10 h-10">
+                <div class="text-xl font-bold">1567</div>
+                <div class="text-slate-400">Products</div>
+            </div>
+        </div>
+        <div class="hover:shadow-md hover:translate-y-1 m-3 transition-all bg-red-200 md:w-1/4 rounded-md">
+            <div class="h-36 p-3 m-4 flex gap-y-3 flex-col">
+                <img src="../images/visitors.png" class="w-10 h-10">
+                <div class="text-xl font-bold">38427</div>
+                <div class="text-slate-400">Visitors</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Flex for good job and page information -->
+
+    <div class="md:grid grid-cols-2">
+        <!-- Good job -->
+        <div class="hover:opacity-90 bg-purple-300 h-auto p-3 m-3 text-indigo-500 flex justify-around rounded-md">
+            <img src="../images/salut.png" class="max-w-28 max-h-28 mr-2">
+           <div>
+            <h3 class="font-bold text-xl">Good job, Destiny </h3>
+            <p class="capitalize">you've completed all tasks for this week</p>
+            <ul class="list-disc list-inside">
+                <li>Finish Dashboard Design</li>
+                <li>Do not relent</li>
+                <li>Fix bug #56</li>
+            </ul>
+           </div>
+        </div>
+    
+        <!-- Grid for page information -->
+        <div class="grid m-3 grid-cols-2 gap-y-5 gap-x-2">
+            <div class="bg-slate-900 text-slate-200 p-4 rounded-md col-span-2">
+                Hi, wait a minute......Follow me on Twitter <span class="text-slate-400 font-bold px-3 hover:underline">@Destiny</span>
+            </div>
+            <div class="border border-slate-400 rounded-md h-auto bg-white  transition-all hover:bg-slate-300">
+                <img src="../images/view.png" class="w-8 h-8 mr-12 mt-1 float-right clear-both">
+                <div class="mt-5 px-4">
+                    <p class="text-xl font-bold">6.4m</p>
+                    <p>Page views</p>   
+                </div>
+            </div>
+            <div class="border border-slate-400 rounded-md h-auto bg-white transition-all hover:bg-slate-300">
+                <img src="../images/community.png" class="w-8 h-8 mr-12 mt-1 float-right clear-both">
+                <div class="mt-5 px-4">
+                    <p class="text-xl font-bold">274K</p>
+                    <p>Unique Users</p>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sales overview -->
+
+    <div class="m-3 bg-white border border-slate-300 rounded-md">
+        <!-- Header -->
+       <div class="px-5 flex justify-between">
+            <p class="text-xl pt-6 font-semibold">Sales Overview</p>
+            <img src="../images/infographic.png" class="w-20 h-20">
+       </div> 
+       <hr>
+       <div class="md:flex justify-around">
+            <div class="mx-14 my-5">
+                <div class="mb-20">
+                    <h2 class="text-4xl font-bold">5,678</h2>
+                    <p>Sales this month</p>
+                </div>
+                <div><img src="../images/increase.png" class="inline w-8 h-8 mr-4"><span class="text-teal-500">92% increase in sales</span> in comparison to last month</div>
+                <div><img src="../images/decrease.png" class="inline w-8 h-8 mr-4"><span class="text-red-400">26% decrease in revenue</span> in comparison to last month </div>
+                <button class="w-3/4 bg-teal-500 hover:bg-teal-400 text-white rounded-md shadow-md mt-4 py-2 mx-auto block hover:translate-y-1 transition-all">View Details</button>
+            </div>
+            <div class="md:mt-16 md:mr-12">
+                <img src="../images/growth.png" class="w-52 h-48 mx-auto">
+            </div>
+        </div>    
+    </div>
+
+    <!-- Four grid boxes -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-y-2 gap-x-3 m-3">
+
+        <div class="flex space-between p-3 border border-slate-300 bg-white h-auto rounded-md">
+            <img src="../images/wallet.png" class="w-7 h-7">
+            <div class="ml-3">
+                <h3 class="text-xl font-bold">30 Sales</h3>
+                <p class="text-slate-500">17 Payments</p>
+            </div>
+        </div>
+
+        <div class="flex space-between p-3 border border-slate-300 bg-white h-auto rounded-md">
+            <img src="../images/shopping-cart.png" class="w-7 h-7">
+            <div class="ml-3">
+                <h3 class="text-xl font-bold">71 Orders</h3>
+                <p class="text-slate-500">57 Items</p>
+            </div>
+        </div>
+
+        <div class="flex space-between p-3 border border-slate-300 bg-white h-auto rounded-md">
+            <img src="../images/connect.png" class="w-7 h-7">
+            <div class="ml-3">
+                <h3 class="text-xl font-bold">92 Posts</h3>
+                <p class="text-slate-500">62 Active</p>
+            </div>
+        </div>
+
+        <div class="flex space-between p-3 border border-slate-300 bg-white h-auto rounded-md">
+            <img src="../images/chat.png" class="w-7 h-7">
+            <div class="ml-3">
+                <h3 class="text-xl font-bold">121 Comments</h3>
+                <p class="text-slate-500">67 Approved</p>
+            </div>
+        </div>
+        <!-- End of grid boxes -->
+
+    </div>
+
+
+    <!-- Browser stats and Table of products -->
+    <div class="md:flex mb-6">
+        <!-- Browser stats -->
+        <div class="grid divide-y divide-slate-300 border border-slate-300 m-3 rounded-md md:w-2/6">
+            <!-- Header -->
+            <div class="bg-white border-slate-300 p-4 text-xl rounded-tl-md rounded-tr-md">
+                Browser Stats
+            </div>
+    
+            <div class="p-3 flex justify-between text-slate-500 bg-white">
+                <p>Google Chrome</p>
+                <p>40%</p>
+            </div>
+            <div class="p-3 flex justify-between text-slate-500 bg-white">
+                <p>Firefox</p>
+                <p>98%</p>
+            </div>
+            <div class="p-3 flex justify-between text-slate-500 bg-white">
+                <p>Internet Explorer</p>
+                <p>20%</p>
+            </div>
+            <div class="p-3 flex justify-between text-slate-500 bg-white rounded-bl-md rounded-br-md">
+                <p>Safari</p>
+                <p>79%</p>
+            </div>
+    
+        </div>
+    
+        <!-- Table of products -->
+    
+        <div class="flex flex-col md:w-4/6">
+            <!-- Header -->
+            <div class="bg-white border-slate-300 p-4 text-xl mt-3 mx-3 rounded-t-md border">
+                Recent Sales
+            </div>
+            
+                <table class="table-auto bg-white mb-3 mx-3 text-center  rounded-b-md">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="px-6 py-2 border border-l-0">Product</th>
+                            <th class="px-6 py-2 border ">Price</th>
+                            <th class="px-6 py-2 border ">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-slate-500">
+                        <tr>
+                            <td></td>
+                            <td class="px-6 py-2 border border-l-0">Lightning To USB-C Adapter<br>Lightning.</td>
+                            <td class="px-6 py-2 border">$65</td>
+                            <td class="px-6 py-2 border">10 mins ago</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="px-6 py-2 border border-l-0">Apple IPhone 8.</td>
+                            <td class="px-6 py-2 border">$32</td>
+                            <td class="px-6 py-2 border">91 Minutes Ago</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="px-6 py-2 border border-l-0">Samsung Galaxy S9.</td>
+                            <td class="px-6 py-2 border">$65</td>
+                            <td class="px-6 py-2 border">10 mins ago</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="px-6 py-2 border border-l-0">Samsung Galaxy S8 256GB.</td>
+                            <td class="px-6 py-2 border">$88</td>
+                            <td class="px-6 py-2 border">16 Minutes Ago</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="px-6 py-2 border border-l-0 rounded-md">Apple Watch.</td>
+                            <td class="px-6 py-2 border">$92</td>
+                            <td class="px-6 py-2 border">70 mins ago</td>
+                        </tr>
+                    </tbody>
+    
+                </table>
+    
+        </div>
+
+    </div>
+
+
+</body>
+</html>
